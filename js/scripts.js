@@ -5,6 +5,9 @@ $(document).ready(function(){
       if(i === 3){
         $("#outputList").append("<li> ping </li>");
       }
+      else if(i === 5){
+        $("#outputList").append("<li> pong </li>");
+      }
       else{
         $("#outputList").append("<li>" + i + "</li>");
       }
