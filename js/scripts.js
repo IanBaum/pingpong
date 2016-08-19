@@ -2,7 +2,12 @@ $(document).ready(function(){
 
   var pingPong = function(number){
     for(i=1;i<=number;i++){
-      $("#outputList").append("<li>" + i + "</li>");
+      if(i === 3){
+        $("#outputList").append("<li> ping </li>");
+      }
+      else{
+        $("#outputList").append("<li>" + i + "</li>");
+      }
     }
   }
 
